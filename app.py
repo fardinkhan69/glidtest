@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 
-with open('model.pkl', 'rb') as f:
+with open('water_potability_model.pkl', 'rb') as f:
     model = pickle.load(f);
 
 def predict_water_potability(ph, hardness, solids, chloramines, sulfate, conductivity, organic_carbon, trihalomethanes, turbidity):
